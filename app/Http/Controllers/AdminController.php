@@ -12,9 +12,9 @@ class AdminController extends Controller
         $data = new food;
         $image=$request->image;
 
-        $imagename=time().'.'.$image->guessExtension();
-        $request->image->move('foodimage' , $imagename);
-        $data->image=$imagename;
+        // $imagename=time().'.'.$image->guessExtension();
+        // $request->image->move('foodimage' , $imagename);
+        // $data->image=$imagename;
 
         $data->title=$request->title;
 

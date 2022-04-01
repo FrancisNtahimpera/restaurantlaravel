@@ -29,7 +29,7 @@
 
                 <div>
                     <label for="image">IMAGE</label>
-                    <input style="color:blue;"  type="file"  name="image" required> 
+                    <input style="color:blue;"  type="text"  name="image" required> 
                 </div>
 
                 <div>
