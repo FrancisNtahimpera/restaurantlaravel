@@ -1,17 +1,17 @@
 
-    <div class="row p-0 m-0 proBanner" id="proBanner">
-      <div class="col-md-12 p-0 m-0">
+    <div class="p-0 m-0 row proBanner" id="proBanner">
+      <div class="p-0 m-0 col-md-12">
         <div class="card-body card-body-padding d-flex align-items-center justify-content-between">
           <div class="ps-lg-1">
             <div class="d-flex align-items-center justify-content-between">
               <p class="mb-0 font-weight-medium me-3 buy-now-text">Free 24/7 customer support, updates, and more with this template!</p>
-              <a href="https://www.bootstrapdash.com/product/corona-free/?utm_source=organic&utm_medium=banner&utm_campaign=buynow_demo" target="_blank" class="btn me-2 buy-now-btn border-0">Get Pro</a>
+              <a href="https://www.bootstrapdash.com/product/corona-free/?utm_source=organic&utm_medium=banner&utm_campaign=buynow_demo" target="_blank" class="border-0 btn me-2 buy-now-btn">Get Pro</a>
             </div>
           </div>
           <div class="d-flex align-items-center justify-content-between">
-            <a href="https://www.bootstrapdash.com/product/corona-free/"><i class="mdi mdi-home me-3 text-white"></i></a>
-            <button id="bannerClose" class="btn border-0 p-0">
-              <i class="mdi mdi-close text-white me-0"></i>
+            <a href="https://www.bootstrapdash.com/product/corona-free/"><i class="text-white mdi mdi-home me-3"></i></a>
+            <button id="bannerClose" class="p-0 border-0 btn">
+              <i class="text-white mdi mdi-close me-0"></i>
             </button>
           </div>
         </div>
@@ -39,11 +39,11 @@
         </li>
        
         <li class="nav-item menu-items">
-          <a class="nav-link" href="pages/forms/basic_elements.html">
+          <a class="nav-link" href="{{ url('/foodmenu') }}">
             <span class="menu-icon">
               <i class="mdi mdi-playlist-play"></i>
             </span>
-            <span class="menu-title">FOOD</span>
+            <span class="menu-title">FoodMenu</span>
           </a>
         </li>
         <li class="nav-item menu-items">

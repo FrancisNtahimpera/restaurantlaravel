@@ -19,6 +19,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class , 'index']);
 
 
+Route::get('/foodmenu', [AdminController::class , 'foodmenu']);
+Route::post('/uploadfood', [AdminController::class , 'upload']);
+
+
 Route::get('/redirects', [HomeController::class , 'redirects']);
 
 Route::get('/users', [AdminController::class , 'user']);
