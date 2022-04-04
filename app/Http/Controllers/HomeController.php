@@ -100,11 +100,12 @@ class HomeController extends Controller
 
         if($usertype == '1')
         {
+            $data=food::all();
             return view('admin.admin');
         }
         else
         {
-            return view('home');
+            return view('home' , compact('data'));
         }
     }
 }

@@ -38,10 +38,29 @@
                 </div>
 
                 <div>
-                    <input style="color:white;"  style="color: black; background-color:rgb(0, 0, 0)" type="submit" value="Save"> 
+                    <input style="color:white;"  style=" background-color:black" type="submit" value="Save"> 
                 </div>
                 
                 </form>
+                <div>
+                    <table>
+                        <th style="padding:30px; background-color:black">food</th>
+                        <th style="padding:30px; background-color:black">price</th>
+                        <th style="padding:30px; background-color:black">description</th>
+                        <th style="padding:30px; background-color:black">image</th>
+                        @foreach($data as $dat)
+                        <tr>
+                            <td>{{ $dat->title }}</td>
+                            <td>{{ $dat->price }}</td>
+                            <td>{{ $dat->description }}</td>
+                            <td><img src="{{ $dat->image }}" alt="" width="100px"></td>
+                            
+                            
+                             
+                        </tr>
+                        @endforeach
+                    </table>
+                </div>
             </div>
         <h1>MENU DU JOUR </h1>
        
