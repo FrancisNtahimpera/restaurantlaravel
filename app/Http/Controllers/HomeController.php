@@ -19,6 +19,8 @@ class HomeController extends Controller
     {
         //
         $data=food::all();
+
+        
         return view('home' , compact('data'));
     }
 
