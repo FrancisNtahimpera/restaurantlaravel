@@ -126,5 +126,20 @@ class AdminController extends Controller
         $data->delete();
         return redirect()->back();
     }
+
+    
+    /**
+         * Remove the specified resource from storage.
+         *
+         * @param  int  $id
+         * @return \Illuminate\Http\Response
+         */
+    public function deletemenu($id)
+    {
+        //
+        $data=food::find($id);
+        $data->delete();
+        return redirect()->back();
+    }
    
 }

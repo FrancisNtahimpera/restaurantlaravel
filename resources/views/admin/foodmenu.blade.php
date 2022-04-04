@@ -48,12 +48,14 @@
                         <th style="padding:30px; background-color:black">price</th>
                         <th style="padding:30px; background-color:black">description</th>
                         <th style="padding:30px; background-color:black">image</th>
+                        <th style="padding:50px; background-color:black">ACTION</th>
                         @foreach($data as $dat)
                         <tr>
-                            <td>{{ $dat->title }}</td>
-                            <td>{{ $dat->price }}</td>
+                            <td style="padding:30px; background-color:rgb(193, 35, 35)">{{ $dat->title }}</td>
+                            <td style="padding:30px; background-color:rgb(83, 72, 72)">{{ $dat->price }}</td>
                             <td>{{ $dat->description }}</td>
                             <td><img src="{{ $dat->image }}" alt="" width="100px"></td>
+                            <td style="padding:50px; background-color:black"><a href="{{ url('/deletemenu', $dat->id ) }}">delete</a> </td>
                             
                             
                              
