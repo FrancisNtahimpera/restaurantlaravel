@@ -10,7 +10,7 @@ class AdminController extends Controller
 {
     public function upload(Request $request){
         $data = new food;
-        $image=$request->image;
+        $data->image=$request->image;
 
         // $imagename=time().'.'.$image->guessExtension();
         // $request->image->move('foodimage' , $imagename);
